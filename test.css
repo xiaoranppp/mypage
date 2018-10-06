@@ -1,0 +1,139 @@
+body,html {
+    padding: 0;
+    margin: 0;
+    background-image:url('../IMAGES/sakura.jpg');
+  }
+  .sidebar {
+    grid-area: sidebar;
+    
+    
+  }
+ 
+  
+  .content {
+    grid-area: content;
+    background-color:rgba(255,255,255,0.5);
+  }
+  
+  .header {
+    grid-area: header;
+    justify-self: stretch;
+    text-align:center;
+    color:rgba(68, 67, 67,0.7);
+    font-size:150%;
+    font-family: 'Charmonman', cursive;
+    background-color:rgba(255,255,255,0.5);
+    line-height: 150%;
+  }
+
+
+  .footer {
+    grid-area: footer;
+    text-align: center;
+    line-height: 15px;
+    padding: 15px;
+    color:rgba(68, 67, 67,0.9);
+    background-color:rgba(255,255,255,0.5);
+  }
+  
+  .wrapper {
+          display: grid;
+          grid-gap: 10px;
+          grid-template-columns: 200px 600px 300px;
+          grid-template-rows: 100px 60px 430px 80px;
+          grid-template-areas:
+          "header  header  header"
+          "sidebar sidebar sidebar"
+          "content content content"
+          "footer  footer  footer";
+          justify-content: center;
+      }
+  
+  
+  .box {
+    border-radius: 20px;
+    font-size: 150%;
+    
+  }
+  img{
+    width:25%;
+    height:70%;
+	
+}
+  
+  @import "compass/css3";
+
+.flex-container {
+  margin: 5px;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-left:0px;
+}
+
+.flex-item {
+  
+  border-radius:10%;
+  background-color:rgba(68, 67, 67,0.7);
+  
+  width: 200px;
+  height: 55px;
+ 
+  margin-right:5px;
+  margin-left:0px;
+  text-align: center;
+  line-height: 50px;
+  
+  
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:visited{
+	color:white;
+}
+.container{
+    padding: 0;
+    margin: 8px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+
+}
+.item-a{
+    
+    width: 280px;
+    height: 415px;
+    margin-top: 2px;
+    margin-right:20px;
+    margin-left:70px;
+    text-align: center;
+    line-height: 50px;
+
+}
+.item-b{
+    padding: 10px;
+    width: 680px;
+    height: 380px;
+    margin-top: 12px;
+    margin-right:20px;
+    line-height: 30px;
+    
+    font-size:100%;
+    color:rgba(37, 37, 37, 0.9);
+
+}
+p{
+    text-indent:50px
+}
