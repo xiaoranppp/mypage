@@ -1,0 +1,50 @@
+body{
+    background-color:yellow;
+    width:100%;
+}
+li{
+    display: inline-block;
+    width:10%;
+    background:grey;
+}
+
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    font-family: 'Courier New', Courier, monospace;
+    color:navy;
+    float: left;
+    
+}
+img{
+    width:600pt;
+
+}
+img:hover{
+    width: 1500pt;;
+}
+.current{
+
+    text-transform: uppercase;
+    color:pink;
+    text-decoration: none;
+    
+}
+div{
+    background-color:pink;
+    border: solid 1px;
+    margin:20px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    transition-timing-function: linear;
+}
+div:hover{
+    background-color:blue;
+    transform: rotate(30deg);
+}
+.github:hover{
+    color:green;
+}

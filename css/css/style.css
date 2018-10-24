@@ -1,0 +1,46 @@
+body{
+    background-image:url('../IMAGES/sakura.jpg');
+}
+li{
+    display: inline-block;
+	width:10%;
+	text-decoration: none;
+	color:white;
+}
+ul {
+    left:0;
+    top: 0;
+	width: 100%;
+	background:rgb(156, 49, 85);
+}
+a:hover{
+    font-family: 'Courier New', Courier, monospace;
+	color:white;
+	float:auto;
+    
+}
+a{
+	color:white;
+}
+a:visited{
+	color:white;
+}
+img{
+	width:30%;
+	
+}
+main{
+	color:rgb(156, 49, 85);
+}
+.maoh{
+	height:500pt;
+}
+.dog{
+	height:220pt;
+}
+div{
+	position:relative;
+	border:5px solid black;
+	height:100px;
+	width:200px;
+}
