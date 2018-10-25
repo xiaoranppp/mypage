@@ -112,7 +112,10 @@ a:visited{
 p{
   text-indent:50px;
 }
-@media screen and (min-width:500px){
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
+      background-color: aqua;
+}
+@media screen and (min-width:737px){
   .in{
     width:10%;
     height:75%;
