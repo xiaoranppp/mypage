@@ -8,15 +8,16 @@ body,html {
   height:75%;
   position: relative;
   left:-2000px;
+  left:-2000px;
 
 }
 .nexth{
   width:9%;
-  height:100%;
+  height:90%;
   float:right;
   position:relative;
-  top:-55px;
-  right:40px;
+  top:-50px;
+  right:20px;
   border-radius: 20px; 
 }
 .box {
@@ -56,7 +57,7 @@ body,html {
 .wrapper {
         display: grid;
         grid-gap: 3px;
-        grid-template-rows: 50px 80px 250px 80px;
+        grid-template-rows: 50px 80px 240px 80px;
         grid-template-areas:
         "header "
         "sidebar "
@@ -102,7 +103,7 @@ a:visited{
       color:white;
   }
 .item-b{
-    margin-top:-50px;
+    margin-top:-70px;
     font-size:100%;
     color:rgba(37, 37, 37, 0.9);
     margin-left:5px;
