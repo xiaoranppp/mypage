@@ -135,7 +135,7 @@ and (max-height:400px)
     
     body{
       background-image:url('../IMAGES/heart.png');
-      background-size: 105% 40%;
+      background-size: 105% 100%;
       background-repeat: no-repeat;
     }
 
@@ -160,7 +160,7 @@ and (max-height:400px)
   .flex-container {
     flex-flow: row nowrap;
     width:550px;
-    margin-left:120px;
+    margin-left:50px;
     justify-content: space-around;
     
 }
