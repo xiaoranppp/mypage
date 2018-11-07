@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <canvas id="drawing-board"></canvas>
+        <title>draw pen</title> 
+        
+    </head> 
+    <body> 
+            <canvas id="drawing-board"></canvas>
+            <script>
+            var canvas = document.getElementById("drawing-board");
+            var ctx = canvas.getContext("2d");
+            canvas.width = 800;
+            canvas.height = 500;
+            canvas.style.position='absolute';
+            canvas.style.margin= 'auto';//居中！！！
+            canvas.style.background = '#D3D3D3';
+            var painting = false;
+            var lastPoint = {x: undefined, y: undefined};
+            ctx.fillStyle = 'red';
+            var k=10;
+           canvas.onmousemove = function (e) {
+                  painting = true;
+                  let x = e.clientX;
+                  let y = e.clientY;
+                  lastPoint = {"x": x, "y": y};
+                  document.onkeydown = keyDown;
+                  ctx.beginPath();
+                  ctx.arc(lastPoint.x,lastPoint.y,k,0,2*Math.PI);
+                  ctx.closePath();
+                  ctx.fill();
+                  };
+        //    document.body.onkeydown = function(e){
+        //         if(e.keyCode == 32){
+        //             canvas.height=501;
+        //         }
+        //     }
+           function keyDown() { 
+                var keycode = event.keyCode;   
+  
+ 　　 　　       var realkey = String.fromCharCode(event.keyCode);
+                if (keycode==32){
+                    let temp=ctx.fillStyle;
+                    canvas.height=500;
+                    ctx.fillStyle=temp;
+                };
+                if (keycode==66){    
+                ctx.fillStyle='blue';} ;
+                if (keycode==82){
+                    ctx.fillStyle='red';
+                };
+                if (keycode==71){
+                    ctx.fillStyle='green';
+                };
+                if (keycode==89){
+                    ctx.fillStyle='yellow';
+                };
+                if (keycode==38){
+                    k=k*2;
+                };
+                if (keycode==40){
+                    k=k/2;
+                };
+           }
+  
+
+
+  
+
+            </script>
+    </body> 
+</html> 
